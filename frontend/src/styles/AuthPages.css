@@ -1,0 +1,72 @@
+/* General styles */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .auth-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-page input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .auth-page button {
+    padding: 0.8rem 1.6rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .auth-page button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Error and success messages */
+  .error-text {
+    color: #dc3545;
+    margin-bottom: 1rem;
+  }
+  
+  .success-text {
+    color: #28a745;
+    margin-bottom: 1rem;
+  }
+  
+  /* Specific styles for different pages */
+  .signup-page form,
+  .login-page form {
+    width: 300px;
+  }
+  
+  .verification-page form,
+  .forget-password-page form,
+  .forget-password-verify-page form,
+  .change-password-page form {
+    width: 400px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .auth-page form {
+      width: 90%;
+    }
+  }
+  

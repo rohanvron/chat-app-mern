@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  username: {
+  email: {
     type: String,
     required: true,
     unique: true,
@@ -24,6 +24,13 @@ const userSchema = new mongoose.Schema({
   profilePic: {
     type: String,
     default: "",
+  },
+  verificationCode: {
+    type: String,
+  },
+  isVerified: {
+    type: Boolean,
+    default: false,
   },
 }, { timestamps: true });
 
