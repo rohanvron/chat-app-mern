@@ -7,8 +7,10 @@ import ForgetPasswordVerifyPage from './pages/forgetPasswordVerify/ForgetPasswor
 import ChangePasswordPage from './pages/changePassword/ChangePasswordPage';
 
 function App() {
+  const basename = process.env.NODE_ENV === 'production' ? '/chat-app-mern' : '';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
