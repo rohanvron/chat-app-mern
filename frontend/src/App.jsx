@@ -8,7 +8,7 @@ import ChangePasswordPage from './pages/changePassword/ChangePasswordPage';
 
 function App() {
   return (
-    <Router basename="/chat-app-mern">
+    <Router>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
