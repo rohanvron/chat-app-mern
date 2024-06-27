@@ -1,9 +1,12 @@
 {
+  "homepage": "https://rohanvron.github.io/chat-app-mern/",
   "name": "chatapp",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "server": "nodemon backend/server.js"
   },
   "type": "module",
@@ -11,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "nodemon": "^3.1.3"
   },
   "dependencies": {
