@@ -93,7 +93,7 @@ const Login = () => {
           {error && <p className="text-red-500 mb-4">{error}</p>}
 
           <a
-            href="/signup"
+            href="/SignUp"
             className="flex text-sm text-white hover:underline flex-col items-center justify-center  hover:text-blue-500 mt-3"
           >
             Don't have an account? {"Sign Up"}

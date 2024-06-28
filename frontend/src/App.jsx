@@ -8,17 +8,18 @@ import ChangePasswordPage from './pages/changePassword/ChangePasswordPage';
 
 function App() {
   const basename = process.env.NODE_ENV === 'production' ? '/chat-app-mern' : '';
+  const basePath = process.env.NODE_ENV === 'production' ? '/chat-app-mern' : '';
 
   return (
     <Router basename={basename}>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/verify-email" element={<VerificationPage />} />
-        <Route path="/forget-password" element={<ForgetPasswordPage />} />
-        <Route path="/forget-password-verify" element={<ForgetPasswordVerifyPage />} />
-        <Route path="/change-password" element={<ChangePasswordPage />} />
+        <Route path={`${basePath}/`} element={<Login />} />
+        <Route path={`${basePath}/signup`} element={<SignUp />} />
+        <Route path={`${basePath}/login`} element={<Login />} />
+        <Route path={`${basePath}/verify-email`} element={<VerificationPage />} />
+        <Route path={`${basePath}/forget-password`} element={<ForgetPasswordPage />} />
+        <Route path={`${basePath}/forget-password-verify`} element={<ForgetPasswordVerifyPage />} />
+        <Route path={`${basePath}/change-password`} element={<ChangePasswordPage />} />
       </Routes>
     </Router>
   );
