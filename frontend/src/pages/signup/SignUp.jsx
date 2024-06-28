@@ -111,7 +111,7 @@ const SignUp = ({
           <Gender gender={gender} setGender={setGender} />
 
           <a
-            href="/Login"
+            href="/login"
             className="flex text-sm hover:underline flex-col items-center justify-center hover:text-blue-500 mt-3 text-white"
           >
             Already have an account? {"Login"}
